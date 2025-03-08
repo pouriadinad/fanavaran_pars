@@ -1,0 +1,43 @@
+/* حذف استایل پیش‌فرض مرورگر */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* تنظیمات پایه برای بدنه سایت */
+  body {
+    font-family: 'Tahoma', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    direction: rtl;
+  }
+  
+  /* سفارشی‌سازی هدر */
+  header {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* سفارشی‌سازی کپشن اسلایدر */
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* افکت بر روی کارت‌های خدمات */
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+  
+  /* تنظیمات Footer */
+  footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
