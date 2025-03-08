@@ -1,43 +1,140 @@
 /* حذف استایل پیش‌فرض مرورگر */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* تنظیمات پایه برای بدنه سایت */
-  body {
-    font-family: 'Tahoma', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-    line-height: 1.6;
-    direction: rtl;
-  }
-  
-  /* سفارشی‌سازی هدر */
-  header {
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  
-  /* سفارشی‌سازی کپشن اسلایدر */
-  .carousel-caption {
-    background: rgba(0, 0, 0, 0.4);
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  /* افکت بر روی کارت‌های خدمات */
-  .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-  }
-  
-  /* تنظیمات Footer */
-  footer p {
-    margin: 0;
-    font-size: 0.9rem;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* تنظیمات پایه برای بدنه سایت */
+body {
+  font-family: 'Tahoma', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  direction: rtl;
+}
+
+/* سفارشی‌سازی هدر */
+header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.datetime {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* افکت برای هدر */
+header h1,
+header p {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+header h1.show,
+header p.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* افکت برای اسکرول */
+.scroll-effect {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-effect.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* سفارشی‌سازی کپشن اسلایدر */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* افکت بر روی کارت‌های خدمات */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* تنظیمات Footer */
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+/* تنظیمات اسلاید */
+#heroCarousel .carousel-inner {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  height: 70vh;
+  object-fit: cover;
+}
+
+/* تنظیم کادر و متن اسلاید */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);  /* پس‌زمینه نیمه شفاف */
+  padding: 20px 30px;
+  border-radius: 15px;  /* گوشه‌های گرد */
+  width: 80%; /* کادر در حدود 80% عرض اسلاید */
+  box-sizing: border-box;
+}
+
+.carousel-caption h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.carousel-caption p {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #f1f1f1;
+}
+
+.carousel-caption a {
+  background-color: #f39c12;
+  color: #333;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.carousel-caption a:hover {
+  background-color: #e67e22;
+}
