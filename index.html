@@ -259,40 +259,9 @@
     .time {
       color: #f39c12;
     }
-    /* بخش ساعت و تاریخ */
-.datetime-container {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 10px 20px;
-  border-radius: 10px;
-  color: white;
-  display: flex;
-  gap: 20px;
-  z-index: 10;
-}
-
-.datetime {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.date {
-  color: #fff;
-}
-
-.time {
-  color: #f39c12;
-}
   </style>
 </head>
 <body>
-  <!-- بخش ساعت و تاریخ -->
-<div class="datetime-container">
-  <div id="date" class="datetime date"></div>
-  <div id="time" class="datetime time"></div>
-</div>
   <!-- هدر سایت -->
   <header>
     <div class="header-content" style="position: relative;">
@@ -485,16 +454,5 @@
       once: true,
     });
   </script>
-  <!-- اسکریپت بروزرسانی تاریخ و زمان -->
-<script>
-  function updateDateTime() {
-    var now = new Date();
-    var date = now.toLocaleDateString('fa-IR');  // تاریخ شمسی
-    var time = now.toLocaleTimeString('fa-IR');  // زمان
-    document.getElementById('date').innerText = date;
-    document.getElementById('time').innerText = time;
-  }
-  setInterval(updateDateTime, 1000);  // بروزرسانی هر ثانیه
-</script>
 </body>
 </html>
