@@ -137,4 +137,91 @@ footer p {
 
 .carousel-caption a:hover {
   background-color: #e67e22;
+}/* برای صفحه نمایش موبایل */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 36px;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1.2rem;
+  }
+
+  .service-card {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .service-card h5 {
+    font-size: 18px;
+  }
+
+  .service-card p {
+    font-size: 14px;
+  }
+
+  .datetime-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .datetime {
+    font-size: 14px;
+  }
+
+  /* اسلایدها برای موبایل */
+  .carousel-item img {
+    height: 50vh;
+    object-fit: cover;
+  }
+}
+
+/* برای صفحه نمایش کوچکتر از موبایل */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .service-card {
+    padding: 15px;
+  }
+
+  .service-card h5 {
+    font-size: 16px;
+  }
+
+  .service-card p {
+    font-size: 12px;
+  }
 }
