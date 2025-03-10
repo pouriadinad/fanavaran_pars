@@ -137,36 +137,39 @@ footer p {
 
 .carousel-caption a:hover {
   background-color: #e67e22;
-}/* برای صفحه نمایش موبایل */
+}/* تغییرات برای بهبود نمایش در موبایل */
 @media (max-width: 768px) {
   header h1 {
-    font-size: 36px;
+    font-size: 28px;
   }
 
   header p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .btn {
-    font-size: 16px;
-    padding: 10px 20px;
+    font-size: 14px;
+    padding: 10px 15px;
   }
 
-  .carousel-caption h1 {
-    font-size: 1.5rem;
+  .carousel-item img {
+    height: 50vh;
+    object-fit: cover;
   }
 
-  .carousel-caption p {
-    font-size: 1.2rem;
+  .carousel-caption {
+    width: 90%;
+    padding: 15px;
+    font-size: 14px;
   }
 
   .service-card {
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
   }
 
   .service-card h5 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .service-card p {
@@ -174,30 +177,24 @@ footer p {
   }
 
   .datetime-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
-
-  .datetime {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 15px;
+    border-radius: 10px;
     font-size: 14px;
-  }
-
-  /* اسلایدها برای موبایل */
-  .carousel-item img {
-    height: 50vh;
-    object-fit: cover;
   }
 }
 
-/* برای صفحه نمایش کوچکتر از موبایل */
+/* تغییرات برای موبایل‌های کوچکتر */
 @media (max-width: 480px) {
   header h1 {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   header p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .carousel-caption h1 {
@@ -209,20 +206,27 @@ footer p {
   }
 
   .btn {
-    font-size: 14px;
-    padding: 8px 15px;
+    font-size: 12px;
+    padding: 8px 12px;
   }
 
   .service-card {
-    padding: 15px;
+    padding: 10px;
   }
 
   .service-card h5 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .service-card p {
     font-size: 12px;
   }
   
+  .datetime-container {
+    top: 5px;
+    left: 5px;
+    font-size: 12px;
+  }
 }
+
+  
